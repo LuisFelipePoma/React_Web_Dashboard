@@ -42,23 +42,8 @@ menu ul li a {
     -o-transition: all 0.3s ease-in-out;
 }
 
-menu ul li a::before {
-    position: absolute;
-    content: "";
-    top: 5px;
-    left: -10px;
-    width: 0px;
-    height: 20px;
-    background: #b95db9;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
 menu ul li:hover a {
-    color: #b95db9;
+    color: #dbb96f;
 }
 
 menu ul li:hover a::before {
@@ -71,7 +56,7 @@ menu ul li:hover a::before {
 }
 
 menu ul li.active a {
-    color: #b95db9;
+    color: #dbb96f;
 }
 
 menu ul li.active a::before {

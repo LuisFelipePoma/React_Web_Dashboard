@@ -1,0 +1,205 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .inputBox {
+    width: 25vw;
+    /* max-width: 350px; */
+    height: 45px;
+    position: relative;
+}
+
+.navbar .inputBox input {
+    width: 100%;
+    height: 100%;
+    background: #28282a;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    color: #d0cfd4;
+    font-size: 15px;
+    padding: 0px 40px;
+}
+
+.navbar .inputBox input::placeholder {
+    color: #a09fa2;
+}
+
+.navbar .inputBox i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #a09fa2;
+    font-size: 25px;
+    width: 40px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.navbar .profileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d0cfd4;
+    position: relative
+}
+
+.navbar .profileContainer .profileIcon {
+    width: 40px;
+    height: 40px;
+    background: #28282a;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    position: relative;
+}
+
+.navbar .profileContainer .profileIcon::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: 5px;
+    width: 8px;
+    height: 8px;
+    background: #61b98a;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.navbar .profileContainer .profileImage {
+    width: 40px;
+    height: 40px;
+    background: red;
+    margin: 0px 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar .profileContainer .profileImage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .profileContainer .profileName {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.navbar .profileContainer .menuChevron {
+    cursor: pointer;
+    font-size: 12px;
+    margin: 0px 10px;
+}
+
+.navbar .profileContainer .menuChevron:hover {
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+
+.navbar .profileContainer .menuContainer {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background: #1d1d1b;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+    width: 180px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+    -webkit-transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+    -moz-transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+    -ms-transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+    -o-transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+}
+
+.navbar .profileContainer .menuContainer ::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #1d1d1b;
+    top: -5px;
+    right: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.navbar .profileContainer .menuContainer ul {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .profileContainer .menuContainer ul li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #757380;
+    text-align: left;
+}
+
+.navbar .profileContainer .menuContainer ul li:hover {
+    background: #28282a;
+    color: #d0cfd4;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+@media screen and (max-width: 625px) {
+    .navbar .inputBox {
+        width: 120px;
+        z-index: 101;
+    }
+
+    .navbar .inputBox input:focus {
+        width: 50vw;
+        transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+        -webkit-transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+        -moz-transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+        -ms-transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+        -o-transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
+    }
+}
