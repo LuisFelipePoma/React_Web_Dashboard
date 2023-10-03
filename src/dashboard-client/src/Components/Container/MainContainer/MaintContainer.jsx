@@ -1,6 +1,7 @@
 import React from 'react'
 import "./MaintContainer.css"
 import banner from "../../../assets/banner.jpg"
+import CardMain from '../CardMain/CardMain'
 
 function MaintContainer() {
     return (
@@ -19,7 +20,24 @@ function MaintContainer() {
                         <p>Don Gato</p>
                     </div>
                 </div>
+                <div className="cards">
+                    <div className="filters">
+                        <div className="popular">
+                            <h2>Feed</h2>
+                            <a href="#!" className='button2'>Popular</a>
+                        </div>
+                        <div className="filter_buttons">
+                            <a href="#!" className='button1'>Recent</a>
+                            <a href="#!" className='button2'>Trends</a>
+                            <a href="#!" className='button2'>Lowest</a>
+                        </div>
+                    </div>
+                    <main>
+                        <CardMain />
+                    </main>
+                </div>
             </div>
+
             <div className="right">
 
             </div>
