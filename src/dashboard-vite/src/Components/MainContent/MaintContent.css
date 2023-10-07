@@ -1,21 +1,67 @@
-.mainContent-grid {
+.main-content-grid {
 	background-color: var(--primary);
 	display: grid;
 	grid-area: 2 / 2 / 2 / 2;
 	grid-template-columns: 7fr 3fr;
-	grid-template-rows: 200px 1fr 5fr 3fr;
+	grid-template-rows: 200px auto auto 200px;
 }
 
 /* Styles for add Register */
-.mainContent-addRegister {
+.main-content-addRegister {
 	display: grid;
 	place-content: center;
 }
 
 /* Styles for Recap Cards Structure */
-.mainContent-recap {
+.main-content-recap {
+	padding: 0 5%;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	flex-wrap: wrap;
 	gap: 20px;
+}
+
+/* Styles for Information Structure */
+.main-content-information {
+	grid-area: 2/2/4/2;
+	padding: 0 25px;
+}
+
+.main-content-information-box {
+	padding: 5%;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	height: auto;
+}
+
+/* Styles for Chart Structure */
+.main-content-charts {
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+}
+
+@media screen and (max-width: 768px) {
+	.main-content-recap {
+		grid-area: 2/1/2/-1;
+		justify-content: center;
+	}
+
+	.main-content-information {
+		display: none;
+	}
+
+	.main-content-charts {
+		grid-area: 3/1/3/-1;
+
+	}
 }

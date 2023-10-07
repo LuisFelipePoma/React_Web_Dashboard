@@ -5,7 +5,6 @@ import {
   FaChartPie,
   FaChartColumn,
   FaCashRegister,
-  FaChildReaching,
   FaCalendarDays
 } from 'react-icons/fa6'
 import { FaSignOutAlt, FaWhmcs } from 'react-icons/fa'
@@ -40,12 +39,6 @@ function SideBar () {
           isActive={activeIcon === 'cashRegister'}
           onClick={() => handleIconClick('cashRegister')}
           iconName='Cash'
-        />
-        <Icon
-          icon={<FaChildReaching />}
-          isActive={activeIcon === 'childReaching'}
-          onClick={() => handleIconClick('childReaching')}
-          iconName='Child'
         />
         <Icon
           icon={<FaCalendarDays />}

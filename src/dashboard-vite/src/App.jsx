@@ -11,17 +11,6 @@ function App () {
       <Header />
       <MaintContent />
       <Footer />
-      {/*
-            <Header>
-            <Sidebar>
-            <MainContent>
-                <Overview>
-                <Charts>
-                <Tables>
-                <Alerts>
-            <MainContent/>
-            <Footer>
-        */}
     </main>
   )
 }

@@ -1,5 +1,5 @@
 :root {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif !important;
 	line-height: 1.5;
 	/* font-weight: 400; */
 
@@ -13,11 +13,11 @@
 	-webkit-text-size-adjust: 100%;
 
 	/* Colors */
-	--primary: #2f4858;
-	--secondary: #86bbd8;
-	--ternary: #336699;
-	--text: #daf7dc;
-	--text-alt: #9ee493;
+	--primary: #2f323a;
+	--secondary: #77567a;
+	--ternary: #debac0;
+	--text: #debac0;
+	--text-alt: #debac0;
 	--text-holder: #A1A6B3;
 }
 
