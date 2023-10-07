@@ -75,3 +75,10 @@
 .sidebar-logout a:hover {
 	color: var(--secondary);
 }
+
+
+@media screen and (max-width: 768px) {
+	.sidebar-grid {
+		width: 15%;
+	}
+}
