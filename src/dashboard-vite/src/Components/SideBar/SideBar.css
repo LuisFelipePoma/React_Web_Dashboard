@@ -1,10 +1,77 @@
+/* Styles for the sidebar in general */
 .sidebar-grid {
-	background-color: blue;
+	background-color: var(--primary);
 	text-align: center;
 	align-items: center;
 	display: grid;
 	/* grid-area: 1 / 1 / -1 / 1; */
+	grid-template-rows: 1fr 7fr 2fr;
 	position: fixed;
-	width: 10%;
+	width: 5%;
 	height: 100%;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Styles for the logo */
+.sidebar-logo {
+	display: grid;
+	place-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.sidebar-logo img {
+	max-width: 60%;
+	max-height: 60%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the icons for navegate*/
+.sidebar-icons {
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(5, 2fr);
+}
+
+.sidebar-icons a {
+	align-self: center;
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.sidebar-icons a:hover {
+	color: var(--secondary);
+}
+
+.sidebar-icons a.active {
+	color: var(--text);
+}
+
+/* Styles for the icons to logout*/
+.sidebar-logout {
+	height: 100%;
+	display: grid;
+	grid-template-rows: repeat(2, 5fr);
+}
+
+.sidebar-logout a {
+	align-self: center;
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+
+.sidebar-logout a:hover {
+	color: var(--secondary);
 }
