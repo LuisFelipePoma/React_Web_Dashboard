@@ -1,0 +1,7 @@
+.header-grid {
+    background-color: red;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-area: 1 / 2 / 1 / -1;
+}

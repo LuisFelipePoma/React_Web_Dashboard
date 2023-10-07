@@ -1,0 +1,10 @@
+.sidebar-grid {
+	background-color: blue;
+	text-align: center;
+	align-items: center;
+	display: grid;
+	/* grid-area: 1 / 1 / -1 / 1; */
+	position: fixed;
+	width: 10%;
+	height: 100%;
+}

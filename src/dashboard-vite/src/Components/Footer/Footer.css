@@ -1,0 +1,7 @@
+.footer-grid {
+	background-color: cadetblue;
+	align-items: center;
+	justify-content: center;
+	display: grid;
+	grid-area: 3 / 2 / 3 / 3;
+}
