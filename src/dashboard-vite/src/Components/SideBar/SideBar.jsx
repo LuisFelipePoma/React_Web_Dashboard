@@ -27,39 +27,45 @@ function SideBar () {
           icon={<FaChartColumn />}
           isActive={activeIcon === 'chartColumn'}
           onClick={() => handleIconClick('chartColumn')}
+          iconName='Tables'
         />
         <Icon
           icon={<FaChartPie />}
           isActive={activeIcon === 'chartPie'}
           onClick={() => handleIconClick('chartPie')}
+          iconName='Charts'
         />
         <Icon
           icon={<FaCashRegister />}
           isActive={activeIcon === 'cashRegister'}
           onClick={() => handleIconClick('cashRegister')}
+          iconName='Cash'
         />
         <Icon
           icon={<FaChildReaching />}
           isActive={activeIcon === 'childReaching'}
           onClick={() => handleIconClick('childReaching')}
+          iconName='Child'
         />
         <Icon
           icon={<FaCalendarDays />}
           isActive={activeIcon === 'calendarDays'}
           onClick={() => handleIconClick('calendarDays')}
+          iconName='Calendar'
         />
       </div>
       <div className='sidebar-logout'>
-        <Icon icon={<FaWhmcs />} />
-        <Icon icon={<FaSignOutAlt />} />
+        <Icon icon={<FaWhmcs />} iconName='Settings' />
+        <Icon icon={<FaSignOutAlt />} iconName='Logout' />
       </div>
     </aside>
   )
 }
 
-const Icon = ({ icon, isActive, onClick }) => (
+const Icon = ({ icon, isActive, onClick, iconName }) => (
   <a href='#!' className={`${isActive ? 'active' : ''}`} onClick={onClick}>
     {icon}
+    <span>{iconName}</span>
   </a>
 )
 

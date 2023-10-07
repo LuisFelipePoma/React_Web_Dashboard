@@ -3,7 +3,7 @@
 	height: 100vh;
 	/* overflow: hidden; */
 	display: grid;
-	grid-template-columns: 10% auto;
+	grid-template-columns: 13% auto;
 	grid-template-rows: 1fr 8fr 1fr;
 }
 

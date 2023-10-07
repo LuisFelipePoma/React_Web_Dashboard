@@ -1,16 +1,14 @@
 /* Styles for the sidebar in general */
 .sidebar-grid {
 	background-color: var(--primary);
-	text-align: center;
-	align-items: center;
 	display: grid;
-	/* grid-area: 1 / 1 / -1 / 1; */
 	grid-template-rows: 1fr 7fr 2fr;
 	position: fixed;
-	max-width: 5%;
-	min-width: 10%;
+	min-width: 13%;
+	max-width: 13%;
 	height: 100%;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+	z-index: 111;
 }
 
 /* Styles for the logo */
@@ -34,9 +32,13 @@
 	grid-template-rows: repeat(5, 2fr);
 }
 
-.sidebar-icons a {
+.sidebar-grid a {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-self: center;
-	font-size: 24px;
+	padding-left: 25%;
+	gap: 1em;
 	color: #fff;
 	text-decoration: none;
 	transition: all 0.3s ease-in-out;
@@ -45,6 +47,21 @@
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 }
+
+.sidebar-grid a svg {
+	font-size: 21px;
+}
+
+.sidebar-grid a span {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+
+.sidebar-icons a span {
+	align-self: center;
+}
+
 
 .sidebar-icons a:hover {
 	color: var(--secondary);
@@ -61,18 +78,6 @@
 	grid-template-rows: repeat(2, 5fr);
 }
 
-.sidebar-logout a {
-	align-self: center;
-	font-size: 24px;
-	color: #fff;
-	text-decoration: none;
-	transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-}
-
 .sidebar-logout a:hover {
 	color: var(--secondary);
 }
@@ -81,5 +86,14 @@
 @media screen and (max-width: 768px) {
 	.sidebar-grid {
 		max-width: 15%;
+	}
+
+	.sidebar-grid a span {
+		display: none;
+	}
+
+	.sidebar-grid a {
+		padding-left: 0px;
+		justify-content: center;
 	}
 }

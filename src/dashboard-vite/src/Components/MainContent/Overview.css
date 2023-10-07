@@ -1,0 +1,9 @@
+.overview-content {
+	padding: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+	.overview {
+		/* grid-area: 1 / 1 / 1 / -1; */
+	}
+}

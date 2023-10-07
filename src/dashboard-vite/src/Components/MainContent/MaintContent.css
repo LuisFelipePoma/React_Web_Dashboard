@@ -1,7 +1,21 @@
-.mainContent-grid{
-	background-color: brown;
-	text-align: center;
-	align-content: center;
+.mainContent-grid {
+	background-color: var(--primary);
 	display: grid;
 	grid-area: 2 / 2 / 2 / 2;
+	grid-template-columns: 7fr 3fr;
+	grid-template-rows: 200px 1fr 5fr 3fr;
+}
+
+/* Styles for add Register */
+.mainContent-addRegister {
+	display: grid;
+	place-content: center;
+}
+
+/* Styles for Recap Cards Structure */
+.mainContent-recap {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 20px;
 }
